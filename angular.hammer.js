@@ -156,11 +156,11 @@
                     }
                   }
 
-                  if (phase === '$apply' || phase === '$digest') {
+                  // if (phase === '$apply' || phase === '$digest') {
                     callHandler();
-                  } else {
-                    scope.$apply(callHandler);
-                  }
+                  // } else {
+                  //   scope.$apply(callHandler);
+                  // }
 
                   function callHandler () {
                     var fn = handlerExpr(scope, {'$event':event});
